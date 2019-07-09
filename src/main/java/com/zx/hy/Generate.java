@@ -1,5 +1,6 @@
 package com.zx.hy;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
@@ -49,14 +50,15 @@ public class Generate {
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("zx");
         gc.setOpen(false);
-        // gc.setSwagger2(true); 实体属性 Swagger2 注解
+        gc.setIdType(IdType.AUTO);//主键策略
+        //gc.setSwagger2(true); //实体属性 Swagger2注解
         mpg.setGlobalConfig(gc);
 
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setUrl("jdbc:mysql://47.97.254.214:3306/loan?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8");
-        // dsc.setSchemaName("public");
+        //dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("xxmcsfwq#123@root");
