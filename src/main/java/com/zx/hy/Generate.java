@@ -46,7 +46,7 @@ public class Generate {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         //输出到指定目录
-        String projectPath="F://download/zx";
+        String projectPath="D://download/zx";
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("zx");
         gc.setOpen(false);
@@ -57,11 +57,11 @@ public class Generate {
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://47.97.254.214:3306/loan?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8");
+        dsc.setUrl("jdbc:mysql://127.0.0.1:3306/msgrec?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8");
         //dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("xxmcsfwq#123@root");
+        dsc.setPassword("admin");
         mpg.setDataSource(dsc);
 
 
@@ -69,7 +69,7 @@ public class Generate {
         PackageConfig pc = new PackageConfig();
          //需要模块名在放出
         //pc.setModuleName(scanner("模块名"));
-        pc.setParent("com.sougua");
+        pc.setParent("com.hn");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
