@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.zx</groupId>
-    <artifactId>hy</artifactId>
+    <artifactId>mybatis-plus-generate</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>hy</name>
+    <name>mybatis-plus-generate</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
