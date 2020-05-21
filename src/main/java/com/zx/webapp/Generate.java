@@ -46,18 +46,18 @@ public class Generate {
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         //输出到指定目录
-        String projectPath="D://download/zx";
+        String projectPath="/home/download";
         gc.setOutputDir(projectPath + "/src/main/java");
         gc.setAuthor("zx");
         gc.setOpen(false);
         gc.setIdType(IdType.AUTO);//主键策略
-        //gc.setSwagger2(true); //实体属性 Swagger2注解
+        gc.setSwagger2(true); //实体属性 Swagger2注解
         mpg.setGlobalConfig(gc);
 
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://47.110.13.117:3306/huonu_api?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8");
+        dsc.setUrl("jdbc:mysql://47.110.13.117:3306/zxhtdev?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8");
         //dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
